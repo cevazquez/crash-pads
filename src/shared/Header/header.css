@@ -1,6 +1,6 @@
 .navbar {
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .search-bar {
@@ -19,4 +19,32 @@
 
 .nav-item {
     font-size: 1.2rem;
+}
+
+.homeBanner {
+    background-image: url(../img/plane.jpg);
+    min-height: 624px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bannerInfo {
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .bannerInfo {
+        padding-top: 160px;
+    }
+}
+
+.bannerInfo h1 {
+    color: blue;
+    margin: 0 0 24px 0;
+    font-size: 45px;
+    font-weight: 500;
 }
