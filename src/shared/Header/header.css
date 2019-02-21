@@ -1,6 +1,7 @@
 .navbar {
     padding: 20px;
     margin-bottom: 0px;
+    border-bottom: 1px #fff solid;
 }
 
 .search-bar {
@@ -43,7 +44,7 @@
 }
 
 .bannerInfo h1 {
-    color: blue;
+    color: navy;
     margin: 0 0 24px 0;
     font-size: 45px;
     font-weight: 500;
