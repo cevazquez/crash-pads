@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { PadCard } from './PadCard';
 
 export class PadList extends React.Component {
@@ -11,9 +11,8 @@ export class PadList extends React.Component {
     }
 
     renderPads = () => {
-        debugger;
-        return this.state.pads.map((pad) => {
-            return <PadCard />
+        return this.state.pads.map((pad, index) => {
+            return <PadCard key={index} />
         });
     }
 
