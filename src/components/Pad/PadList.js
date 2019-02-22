@@ -19,7 +19,7 @@ export class PadList extends React.Component {
     render() {
         return (
             <section>
-                <h2>Pads Around the World</h2>
+                <h2>Where are you flying to?</h2>
                 <div>
                     {this.renderPads()}
                 </div>

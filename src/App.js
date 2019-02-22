@@ -1,35 +1,30 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 import { Header } from './shared/Header';
 import { PadDetail } from './components/PadDetail';
 import { PadList } from './components/Pad/PadList';
 
+import { Nav } from './shared/Header/Nav';
+
 import './App.css';
 
 class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      isPadList: true
-    }
-  }
-
-  navigate = () => {
-    this.setState({
-      isPadList: !this.state.isPadList
-    })
-  }
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <button onClick={this.navigate}>Toggle Toggle</button>
-        <div className="container">
-          {this.state.isPadList ? <PadList /> : <PadDetail />}
+      <BrowserRouter>
+        <div className="App">
+          <div className="homeBanner">
+            <Nav />
+            <Header />
+          </div>
+          <div className="container">
+            <Route exact path="/" component={PadList} />
+            <Route exact path="/test" component={PadDetail} />
+          </div>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }

@@ -31,3 +31,13 @@
     transform: rotate(360deg);
   }
 }
+
+.homeBanner {
+  background-image: url(./shared/img/plane.jpg);
+  /* min-height: 624px; */
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

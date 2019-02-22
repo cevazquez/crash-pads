@@ -1,9 +1,3 @@
-.navbar {
-    padding: 20px;
-    margin-bottom: 0px;
-    border-bottom: 1px #fff solid;
-}
-
 .search-bar {
     height: 50px;
 }
@@ -22,15 +16,6 @@
     font-size: 1.2rem;
 }
 
-.homeBanner {
-    background-image: url(../img/plane.jpg);
-    min-height: 624px;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
 .bannerInfo {
     width: 100%;
     text-align: center;
@@ -44,8 +29,13 @@
 }
 
 .bannerInfo h1 {
+    font-family: 'Raleway', sans-serif;
     color: navy;
     margin: 0 0 24px 0;
     font-size: 45px;
     font-weight: 500;
+}
+
+.banner {
+    min-height: 580px;
 }
